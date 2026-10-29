@@ -1,0 +1,45 @@
+### InternalAllTheThings
+
+**Repo:** https://github.com/swisskyrepo/InternalAllTheThings
+
+**Tagline:** Active Directory and Internal Pentest Cheatsheets
+
+**What it is:** The internal-network companion to PayloadsAllTheThings,
+maintained by the same author (swisskyrepo). It covers everything that
+happens **after** you land your first foothold and move inside the network.
+
+**What's inside:**
+
+- **Active Directory attacks** — Kerberoasting, AS-REP roasting,
+  DCSync, Golden Ticket, Silver Ticket, ACL abuse
+- **NTLM relay and coercion** — Responder, ntlmrelayx, PetitPotam,
+  PrinterBug, Coercer
+- **Lateral movement** — PsExec, WMI, WinRM, SMB, RDP, SSH pivoting
+- **Credential dumping** — Mimikatz, secretsdump, LSASS techniques
+- **Network discovery** — Nmap, Masscan, Netdiscover, Responder,
+  Bettercap, arp-scan (this is where the old PayloadsAllTheThings
+  network discovery page lives now)
+- **Pivoting** — chisel, ligolo-ng, sshuttle, socat, proxychains
+- **Privilege escalation** — Windows and Linux internal tricks
+- **Trust relationships** — domain trusts, forest trusts, cross-domain
+
+**When to use it:**
+
+- You have a foothold on a domain-joined machine → open the AD section
+- You captured NTLM hashes → open the NTLM relay page
+- You need to move to another host → open the lateral movement page
+- You're doing an internal pentest or red team engagement
+- You want to understand how attackers traverse a corporate network
+
+**Framework fit:** Stage 2 (Surface Map) for network discovery,
+Stage 7 (Privilege Escalation) for internal escalation and lateral movement.
+
+**Important note for beginners:** InternalAllTheThings is **not** a
+beginner starting point. Learn the framework and web attacks first.
+Come back to this repo when you have your first foothold in a lab
+environment (TryHackMe "Active Directory Basics" or HackTheBox "Forest").
+
+**Clone command:**
+
+```bash
+git clone https://github.com/swisskyrepo/InternalAllTheThings.git
